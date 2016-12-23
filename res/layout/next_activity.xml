@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">	
+        
+        <EditText
+            android:id="@+id/etURL"
+            android:layout_gravity="bottom"
+            android:layout_weight="2"
+             android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            </EditText>
+        
+      
+         
+          <ImageButton 
+           android:id="@+id/bGo"
+           android:background="#ffa500"
+           android:src="@drawable/ic_action_search"
+           android:layout_weight="8"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"/>
+        
+    </LinearLayout>
+     <ProgressBar
+        android:id="@+id/progressbar_Horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:background="#7FE817"
+        android:max="100" />
+    
+   <WebView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/wvBrowser"/>
+
+</LinearLayout>
